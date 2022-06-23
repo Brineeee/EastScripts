@@ -506,7 +506,7 @@ function Blacklib:Window()
         TabFrame.BackgroundTransparency = 0
         TabFrame.BorderSizePixel = 0
         TabFrame.AutoButtonColor = false
-        TabFrame.Size = 
+        TabFrame.Size = UDim2.new(0, 150, 0, 30)
         TabFrame.Font = Enum.Font.Code
         TabFrame.Text = ""
         TabFrame.TextColor3 = Color3.fromRGB(180,180,180)
