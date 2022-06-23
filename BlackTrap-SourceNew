@@ -1956,7 +1956,7 @@ function Blacklib:Window()
                 TweenService:Create(Toggle, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {BackgroundColor3 = Color3.fromRGB(35, 35, 35)}, true):Play()
             end)
 
-            local toggled = true or false
+            local toggled = false and true
             if toggled then
             TweenService:Create(Toggle_2, TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),{BackgroundTransparency = 0}, true):Play()
                 callback(toggled)
