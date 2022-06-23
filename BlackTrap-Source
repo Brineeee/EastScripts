@@ -1325,7 +1325,7 @@ function Blacklib:Window()
             
                 SliderCount.Name = "SliderCount"
                 SliderCount.Parent = SliderButton
-                SliderCount.BackgroundColor3 = Color3.fromRGB(0,200,0)
+                SliderCount.BackgroundColor3 = _G.SectionColor
                 SliderCount.BackgroundTransparency = 0.3
                 SliderCount.BorderSizePixel = 0
                 SliderCount.Position = UDim2.new(0,start,0,0)
@@ -1914,8 +1914,8 @@ function Blacklib:Window()
             Title.Size = UDim2.new(0, 150, 0, 30)
             Title.Font = Enum.Font.Code
             Title.Text = title
-            Title.TextColor3 = Color3.fromRGB(255, 255, 255)
-            Title.TextSize = 14.000
+            Title.TextColor3 = Color3.fromRGB(180, 180, 180)
+            Title.TextSize = 12.000
             Title.TextXAlignment = Enum.TextXAlignment.Left
             
             Toggle_2.Name = "Toggle"
