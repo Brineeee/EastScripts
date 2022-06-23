@@ -102,7 +102,7 @@ function Blacklib:Window()
     BlackImage.Position = UDim2.new(0, 3, 0, 3)
     BlackImage.Size = UDim2.new(0, 25, 0, 25)
     BlackImage.Image = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"
-    BlackImage.ImageColor3 = Color3.fromRGB(0,0,255)
+    BlackImage.ImageColor3 = Color3.fromRGB(0,255,255)
     
     BlackTitle.Name = "BlackTitle"
     BlackTitle.Parent = WindowFrame
@@ -124,7 +124,7 @@ function Blacklib:Window()
     Space.Size = UDim2.new(0, 10, 0, 25)
     Space.Font = Enum.Font.GothamBold
     Space.Text = "|"
-    Space.TextColor3 = Color3.fromRGB(0,0,255)
+    Space.TextColor3 = Color3.fromRGB(0,255,255)
     Space.TextSize = 18.000
     
     ServerTime.Name = "ServerTime"
@@ -693,7 +693,7 @@ function Blacklib:Window()
                 UIStroke.Name = "UIStroke"
                 UIStroke.Parent = Button
                 UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-                UIStroke.Color = Color3.fromRGB(0,0,255)
+                UIStroke.Color = _G.SectionColor
                 UIStroke.LineJoinMode = Enum.LineJoinMode.Round
                 UIStroke.Thickness = 0.5
                 UIStroke.Transparency = 0
@@ -813,7 +813,7 @@ function Blacklib:Window()
                 UIStroke.Name = "UIStroke"
                 UIStroke.Parent = CheckFrame2
                 UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-                UIStroke.Color = Color3.fromRGB(0,0,255)
+                UIStroke.Color = _G.SectionColor
                 UIStroke.LineJoinMode = Enum.LineJoinMode.Round
                 UIStroke.Thickness = 0.5
                 UIStroke.Transparency = 0
@@ -873,7 +873,7 @@ function Blacklib:Window()
                 if default == true then
                     ImageButton.ImageRectOffset = Vector2.new(4, 836)
                     game.TweenService:Create(ImageButton, TweenInfo.new(0.08, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut),
-                        {ImageColor3 = Color3.fromRGB(0,0,255)}
+                        {ImageColor3 = _G.SectionColor}
                         ):Play()
                     toggle = not toggle
                       pcall(function()
@@ -885,7 +885,7 @@ function Blacklib:Window()
                 ImageButton.MouseButton1Click:Connect(function()
                     if toggle == false then
                         game.TweenService:Create(ImageButton, TweenInfo.new(0.08, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut),
-                            {ImageColor3 = Color3.fromRGB(0,0,255)}
+                            {ImageColor3 = _G.SectionColor}
                             ):Play()
                         ImageButton.ImageRectOffset = Vector2.new(4, 836)
                     else
@@ -939,7 +939,7 @@ function Blacklib:Window()
                 UIStroke.Name = "UIStroke"
                 UIStroke.Parent = Frame
                 UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-                UIStroke.Color = Color3.fromRGB(0,0,255)
+                UIStroke.Color = _G.SectionColor
                 UIStroke.LineJoinMode = Enum.LineJoinMode.Round
                 UIStroke.Thickness = 0.5
                 UIStroke.Transparency = 0
@@ -1082,7 +1082,7 @@ function Blacklib:Window()
                             {Rotation = 0}
                             ):Play()
                         game.TweenService:Create(ImageButton, TweenInfo.new(0.08, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut),
-                            {ImageColor3 = Color3.fromRGB(0,0,255)}
+                            {ImageColor3 = _G.SectionColor}
                             ):Play()
                     end
                 end)
@@ -1103,7 +1103,7 @@ function Blacklib:Window()
                     
                     ItemList.Name = "ItemList"
                     ItemList.Parent = DropItemScroll
-                    ItemList.BackgroundColor3 = Color3.fromRGB(0,255,0)
+                    ItemList.BackgroundColor3 = _G.SectionColor
                     ItemList.BackgroundTransparency = 1.000
                     ItemList.Size = UDim2.new(0, 375, 0, 30)
                     ItemList.AutoButtonColor = false
@@ -1183,7 +1183,7 @@ function Blacklib:Window()
                     ItemList.Size = UDim2.new(0, 375, 0, 30)
                     ItemList.AutoButtonColor = false
                     ItemList.Font = Enum.Font.Code
-                    ItemList.TextColor3 = Color3.fromRGB(255,0,0)
+                    ItemList.TextColor3 = _G.SectionColor
                     ItemList.TextSize = 12.000
                     ItemList.Text = newadd or "None..."
                     ItemList.TextXAlignment = Enum.TextXAlignment.Center
@@ -1260,7 +1260,7 @@ function Blacklib:Window()
                 UIStroke.Name = "UIStroke"
                 UIStroke.Parent = SliderFrame_2
                 UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-                UIStroke.Color = Color3.fromRGB(0,0,255)
+                UIStroke.Color = _G.SectionColor
                 UIStroke.LineJoinMode = Enum.LineJoinMode.Round
                 UIStroke.Thickness = 0.5
                 UIStroke.Transparency = 0
@@ -1334,7 +1334,7 @@ function Blacklib:Window()
                 Title_2.Name = "Title_2"
                 Title_2.Parent = SliderButton
                 Title_2.AnchorPoint = Vector2.new(0, 0)
-                Title_2.BackgroundColor3 = Color3.fromRGB(0,200,0)
+                Title_2.BackgroundColor3 = _G.SectionColor
                 Title_2.AutoButtonColor = false
                 Title_2.BackgroundTransparency = 1.000
                 Title_2.Position = UDim2.new(0,start,0,0)
@@ -1370,7 +1370,7 @@ function Blacklib:Window()
             
                 SliderBox.Name = "SliderBox"
                 SliderBox.Parent = BoxFrame
-                SliderBox.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+                SliderBox.BackgroundColor3 = _G.SectionColor
                 SliderBox.BackgroundTransparency = 1.000
                 SliderBox.Position = UDim2.new(0, 0, 0, 1.65)
                 SliderBox.Size = UDim2.new(0, 50, 0, 15)
@@ -1597,7 +1597,7 @@ function Blacklib:Window()
                 
                 UIStroke2.Parent = BoxCover
                 UIStroke2.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-                UIStroke2.Color = Color3.fromRGB(0,0,255)
+                UIStroke2.Color = _G.SectionColor
                 UIStroke2.LineJoinMode = Enum.LineJoinMode.Round
                 UIStroke2.Thickness = 0.5
                 UIStroke2.Transparency = 0
@@ -1875,6 +1875,8 @@ function Blacklib:Window()
 
        	function ItemHand:Toggle(title, value, callback)
             local Toggle = Instance.new("TextButton")
+            local UIStroke233 = Instance.new("UIStroke")
+            local UICorner333 = Instance.new("UICorner")
             local Title = Instance.new("TextLabel")
             local Toggle_2 = Instance.new("Frame")
             local Stroke = Instance.new('UIStroke')
@@ -1892,6 +1894,18 @@ function Blacklib:Window()
             Toggle.TextColor3 = Color3.fromRGB(0, 0, 0)
             Toggle.TextSize = 14.000
             
+            UIStroke233.Parent = Toggle
+            UIStroke233.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+            UIStroke233.Color = _G.SectionColor
+            UIStroke233.LineJoinMode = Enum.LineJoinMode.Round
+            UIStroke233.Thickness = 0.5
+            UIStroke233.Transparency = 0
+            UIStroke233.Enabled = true
+            UIStroke233.Archivable = true
+                
+            UICorner333.Parent = Toggle
+            UICorner333.CornerRadius = UDim.new(0, 3)
+
             Title.Name = "Title"
             Title.Parent = Toggle
             Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
