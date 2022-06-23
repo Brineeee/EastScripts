@@ -1885,7 +1885,7 @@ function Blacklib:Window()
             Toggle.Name = "Toggle"
             Toggle.Parent = sectionFrame
             Toggle.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-            Toggle.Size = UDim2.new(0, 150, 0, 30)
+            Toggle.Size = UDim2.new(0, 387, 0, 60)
             Toggle.AutoButtonColor = false
             Toggle.Font = Enum.Font.SourceSans
             Toggle.Text = ""
