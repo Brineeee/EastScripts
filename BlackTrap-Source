@@ -1,3 +1,10 @@
+do
+local ui = game:GetService("CoreGui"):FindFirstChild("Ozyt") 
+if ui then
+ui:Destroy() 
+end
+end
+
 local Blacklib = {}
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
@@ -44,7 +51,7 @@ function Blacklib:Window()
     local CloseButton = Instance.new("TextButton")
     
     -- Propertiers --
-    BlackTrap.Name = "BlackTrap"
+    BlackTrap.Name = "Ozyt"
     BlackTrap.Parent = game.CoreGui
     BlackTrap.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
     
