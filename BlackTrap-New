@@ -1873,7 +1873,7 @@ function Blacklib:Window()
             -- End Label --
             end
 
-       	function ItemHand:Toggle(title, value, callback)
+       	function ItemHand:NewToggle(title, value, callback)
             local Toggle = Instance.new("TextButton")
             local UICorner = Instance.new("UICorner")
             local Title = Instance.new("TextLabel")
