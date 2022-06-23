@@ -506,7 +506,7 @@ function Blacklib:Window()
         TabFrame.BackgroundTransparency = 0
         TabFrame.BorderSizePixel = 0
         TabFrame.AutoButtonColor = false
-        TabFrame.Size = UDim2.new(0, 150, 0, 30)
+        TabFrame.Size = 
         TabFrame.Font = Enum.Font.Code
         TabFrame.Text = ""
         TabFrame.TextColor3 = Color3.fromRGB(180,180,180)
@@ -1885,7 +1885,7 @@ function Blacklib:Window()
             Toggle.Name = "Toggle"
             Toggle.Parent = sectionFrame
             Toggle.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-            Toggle.Size = UDim2.new(1, -6, 0, 34)
+            Toggle.Size = UDim2.new(0, 150, 0, 30)
             Toggle.AutoButtonColor = false
             Toggle.Font = Enum.Font.SourceSans
             Toggle.Text = ""
@@ -1900,7 +1900,7 @@ function Blacklib:Window()
             Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
             Title.BackgroundTransparency = 1.000
             Title.Position = UDim2.new(0, 8, 0, 0)
-            Title.Size = UDim2.new(1, -6, 1, 0)
+            Title.Size = UDim2.new(0, 150, 0, 30)
             Title.Font = Enum.Font.Gotham
             Title.Text = title
             Title.TextColor3 = Color3.fromRGB(255, 255, 255)
