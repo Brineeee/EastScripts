@@ -12,16 +12,16 @@ _G.WindowBackgroundColor = Color3.fromRGB(12, 12, 12)
 _G.BackgroundItemColor = Color3.fromRGB(20, 20, 20)
 _G.TabWindowColor = Color3.fromRGB(30, 30, 30)
 _G.ContainerColor = Color3.fromRGB(30, 30, 30)
-_G.TitleTextColor = Color3.fromRGB(0, 0, 255)
-_G.ImageColor = Color3.fromRGB(0, 0, 255)
-_G.LineThemeColor = Color3.fromRGB(0, 0, 255)
+_G.TitleTextColor = Color3.fromRGB(0, 255, 255)
+_G.ImageColor = Color3.fromRGB(0, 255, 255)
+_G.LineThemeColor = Color3.fromRGB(0, 255, 255)
 _G.TabTextColor = Color3.fromRGB(150, 150, 150)
-_G.TabImageColor = Color3.fromRGB(0, 0, 255)
-_G.TabThemeColor = Color3.fromRGB(0, 0, 255)
-_G.SectionColor = Color3.fromRGB(0, 0, 255)
-_G.SectionImageColor = Color3.fromRGB(0, 0, 255)
-_G.SectionTextColor = Color3.fromRGB(0, 0, 255)
-_G.SectionOn = Color3.fromRGB(0, 0, 255)
+_G.TabImageColor = Color3.fromRGB(0, 255, 255)
+_G.TabThemeColor = Color3.fromRGB(0, 255, 255)
+_G.SectionColor = Color3.fromRGB(0, 255, 255)
+_G.SectionImageColor = Color3.fromRGB(0, 255, 255)
+_G.SectionTextColor = Color3.fromRGB(0, 255, 255)
+_G.SectionOn = Color3.fromRGB(0, 255, 255)
 
 function Blacklib:Window()
     local osfunc = {}
@@ -136,7 +136,7 @@ function Blacklib:Window()
     ServerTime.Font = Enum.Font.Code
     ServerTime.Text = ""
     ServerTime.TextSize = 13.000
-    ServerTime.TextColor3 = Color3.fromRGB(0,0,255)
+    ServerTime.TextColor3 = Color3.fromRGB(0,255,255)
     ServerTime.TextXAlignment = Enum.TextXAlignment.Left
     
     Space2.Name = "Space2"
@@ -147,7 +147,7 @@ function Blacklib:Window()
     Space2.Size = UDim2.new(0, 10, 0, 25)
     Space2.Font = Enum.Font.GothamBold
     Space2.Text = "|"
-    Space2.TextColor3 = Color3.fromRGB(0,0,255)
+    Space2.TextColor3 = Color3.fromRGB(0,255,255)
     Space2.TextSize = 18.000
     
     Pinged.Name = "Pinged"
@@ -159,7 +159,7 @@ function Blacklib:Window()
     Pinged.Font = Enum.Font.Code
     Pinged.Text = ""
     Pinged.TextSize = 13.000
-    Pinged.TextColor3 = Color3.fromRGB(0,0,255)
+    Pinged.TextColor3 = Color3.fromRGB(0,255,255)
     Pinged.TextXAlignment = Enum.TextXAlignment.Left
     
     CloseButton.Name = "CloseButton"
@@ -170,7 +170,7 @@ function Blacklib:Window()
     CloseButton.Position = UDim2.new(0, 525, 0, 3)
     CloseButton.Size = UDim2.new(0, 25, 0, 25)
     CloseButton.Font = Enum.Font.Gotham
-    CloseButton.TextColor3 = Color3.fromRGB(0, 0, 255)
+    CloseButton.TextColor3 = Color3.fromRGB(0, 255, 255)
     CloseButton.Text = "×"
     CloseButton.Rotation = 0
     CloseButton.TextSize = 25.000
@@ -584,7 +584,7 @@ function Blacklib:Window()
                 end
             end
             game.TweenService:Create(TabFrame, TweenInfo.new(.1, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut), 
-                {BackgroundColor3 = Color3.fromRGB(0,0,255)}
+                {BackgroundColor3 = Color3.fromRGB(0,255,255)}
                 ):Play()
             game.TweenService:Create(TabFrame, TweenInfo.new(.1, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut),
                 {BackgroundTransparency = 0.9}
@@ -1885,7 +1885,7 @@ function Blacklib:Window()
             Toggle.Parent = sectionFrame
             Toggle.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
             Toggle.BorderColor3 = _G.SectionOn
-            Toggle.Size = UDim2.new(0, 387, 0, 30)
+            Toggle.Size = UDim2.new(0, 375, 0, 30)
             Toggle.AutoButtonColor = false
             Toggle.Font = Enum.Font.Code
             Toggle.Text = ""
