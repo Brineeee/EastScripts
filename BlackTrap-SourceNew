@@ -108,7 +108,7 @@ function Blacklib:Window()
     BlackImage.BackgroundTransparency = 1.000
     BlackImage.Position = UDim2.new(0, 3, 0, 3)
     BlackImage.Size = UDim2.new(0, 25, 0, 25)
-    BlackImage.Image = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"
+    BlackImage.Image = "rbxthumb://type=Asset&id=171522004&w=150&h=150"
     BlackImage.ImageColor3 = Color3.fromRGB(0,255,255)
     
     BlackTitle.Name = "BlackTitle"
@@ -529,8 +529,8 @@ function Blacklib:Window()
         TabImage.BackgroundTransparency = 1.000
         TabImage.Position = UDim2.new(0, 3, 0, 4)
         TabImage.Size = UDim2.new(0, 20, 0, 20)
-        TabImage.Image = img or "rbxthumb://type=Asset&id=5107182114&w=150&h=150"
-        TabImage.ImageColor3 = Color3.fromRGB(0,0,255)
+        TabImage.Image = img or "rbxthumb://type=Asset&id=171522004&w=150&h=150"
+        TabImage.ImageColor3 = _G.SectionColor
         
         TabTitle.Name = tabtitle or "TabTitle"
         TabTitle.Parent = TabFrame
